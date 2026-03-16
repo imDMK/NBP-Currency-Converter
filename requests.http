@@ -1,0 +1,20 @@
+### Initialize default computers
+POST http://localhost:8080/computers/init
+
+### Get all computers
+GET http://localhost:8080/computers
+
+### Search by name
+GET http://localhost:8080/computers/search?name=ACER
+
+### Search by date
+GET http://localhost:8080/computers/by-date?date=2026-01-05
+
+### Sort by name
+GET http://localhost:8080/computers/sorted?sort=name
+
+### Sort by accounting date
+GET http://localhost:8080/computers/sorted?sort=accountingDate
+
+### Generate XML invoice
+POST http://localhost:8080/computers/invoice
